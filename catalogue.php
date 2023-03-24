@@ -21,6 +21,7 @@
     foreach ($resultat as $value)
     {
         echo '<div>';
+        echo '<p> <img src="images/uploads/' . $value['bd_photo'] . '"> </p>';
         echo '<h3>' . $value['bd_titre'] . '</h3>';
         echo '<p> Tarif: ' . $value['bd_prix'] . ' € </p>';
         echo '<p>' . $value['bd_nb_pages'] . ' pages </p>';

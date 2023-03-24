@@ -11,8 +11,9 @@
     <h1>gestion de nos albums</h1>
     <p>ajouter ici un album</p>
     <hr>
-    <form method="GET" action="valid_ajout.php">
+    <form method="POST" action="valid_ajout.php" enctype="multipart/form-data">
         titre:<input type="text" name="titre"><br>
+        Photo : <input type="file" name="photo" required /><br />
         prix:<input type="text" name="prix"><br>
         nombre de pages:<input type="text" name="nbpages"><br>
         auteur:
@@ -29,7 +30,7 @@
             }
             ?>
         </select><br>
-        <input type="submit" name="">
+        <input type="submit" name="ajouter">
     </form>
 
     </tbody>
